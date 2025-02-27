@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 
 
 def index_page(request):
-    return render(request, 'index.html')
+    return HttpResponse(request, {})
